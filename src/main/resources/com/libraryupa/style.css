@@ -1,0 +1,70 @@
+/* PALETTE REFERENCE:
+   Space Indigo: #21295C
+   Regal Navy:   #1B3B6F
+   Baltic Blue:  #065A82
+   Cerulean:     #1C7293
+   Powder Blue:  #9EB3C2
+*/
+
+.root {
+    -fx-background-color: #21295C; /* Space Indigo Background */
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+/* HEADERS */
+.header-label {
+    -fx-text-fill: #9EB3C2; /* Powder Blue */
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+/* BUTTONS */
+.button {
+    -fx-background-color: #065A82; /* Baltic Blue */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #1C7293; /* Cerulean on hover */
+}
+
+/* TEXT FIELDS */
+.text-field {
+    -fx-background-color: #1B3B6F; /* Regal Navy */
+    -fx-text-fill: #9EB3C2; /* Powder Blue text */
+    -fx-prompt-text-fill: derive(#9EB3C2, -30%);
+    -fx-background-radius: 5;
+}
+
+/* TABLE VIEW STYLING (Dark Theme) */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-base: #1B3B6F; /* Regal Navy */
+    -fx-control-inner-background: #1B3B6F;
+    -fx-background-insets: 0;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #065A82; /* Baltic Blue */
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell {
+    -fx-background-color: #1B3B6F; /* Regal Navy */
+    -fx-text-fill: white;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: derive(#1B3B6F, 10%); /* Slightly lighter for striping */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #1C7293; /* Cerulean selection */
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: white;"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.libraryupa.controller.DashboardController">
+
+    <Label text="Búsqueda Avanzada" textFill="#21295C">
+        <font>
+            <Font name="System Bold" size="24.0"/>
+        </font>
+    </Label>
+
+    <TextField maxWidth="300" promptText="Ingrese ISBN o Título..." />
+
+</VBox>

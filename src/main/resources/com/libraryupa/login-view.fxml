@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="15.0"
+      stylesheets="@style.css"
+      xmlns:fx="http://javafx.com/fxml/1"
+      xmlns="http://javafx.com/javafx/21"
+      fx:controller="com.libraryupa.controller.LoginController">
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="Biblioteca UPA" styleClass="header-label" />
+
+    <VBox alignment="CENTER" maxWidth="300.0" spacing="10.0" styleClass="login-card">
+        <padding>
+            <Insets bottom="30.0" left="20.0" right="20.0" top="30.0" />
+        </padding>
+
+        <Label text="Iniciar Sesión" styleClass="sub-header" />
+
+        <TextField fx:id="usernameField" promptText="Usuario" />
+
+        <PasswordField fx:id="passwordField" promptText="Contraseña" />
+
+        <Button onAction="#onLoginClick" prefWidth="200.0" text="Ingresar" />
+
+        <Label fx:id="errorLabel" textFill="#e63946" />
+    </VBox>
+</VBox>

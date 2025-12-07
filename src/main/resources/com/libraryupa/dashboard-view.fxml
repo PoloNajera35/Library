@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainLayout"
+            stylesheets="@style.css"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.libraryupa.controller.DashboardController">
+
+    <left>
+        <VBox spacing="10.0" style="-fx-background-color: #21295C;" prefWidth="200.0">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <Label text="Menú" textFill="#9EB3C2">
+                <font>
+                    <Font name="System Bold" size="20.0"/>
+                </font>
+                <VBox.margin>
+                    <Insets bottom="10.0"/>
+                </VBox.margin>
+            </Label>
+
+            <Button text="Libros"
+                    onAction="#handleShowBooks"
+                    maxWidth="Infinity"
+                    styleClass="button"/>
+
+            <Button text="Miembros"
+                    onAction="#handleShowMembers"
+                    maxWidth="Infinity"
+                    styleClass="button"/>
+
+            <Button text="Búsqueda"
+                    onAction="#handleShowSearch"
+                    maxWidth="Infinity"
+                    styleClass="button"/>
+
+            <Button text="Cerrar Sesión"
+                    onAction="#handleLogout"
+                    maxWidth="Infinity"
+                    style="-fx-background-color: #e63946; -fx-text-fill: white;"/>
+        </VBox>
+    </left>
+
+    <center>
+        <VBox alignment="CENTER" style="-fx-background-color: white;">
+            <Label text="Bienvenido al Sistema de Biblioteca UPA" textFill="#21295C">
+                <font>
+                    <Font size="24.0"/>
+                </font>
+            </Label>
+        </VBox>
+    </center>
+
+</BorderPane>
