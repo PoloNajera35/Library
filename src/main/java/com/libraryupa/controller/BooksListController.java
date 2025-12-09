@@ -46,4 +46,14 @@ public class BooksListController {
     private void handleAddBook() {
         System.out.println("Message to see if the add button works");
     }
+
+    @FXML
+    private void handleDeleteBook() {
+        System.out.println("Message to see if the delete button works");
+    }
+
+    @FXML
+    private void handleEditBook() {
+        System.out.println("Message to see if the edit button works");
+    }
 }

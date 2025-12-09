@@ -30,6 +30,8 @@
         <TextField fx:id="authorField" promptText="Autor" />
         <TextField fx:id="isbnField" promptText="ISBN" />
         <Button text="Agregar Libro" onAction="#handleAddBook" styleClass="button"/>
+        <Button text="Editar Libro" onAction="#handleEditBook" styleClass="button"/>
+        <Button text="Borrar Libro" onAction="#handleDeleteBook" styleClass="button"/>
     </HBox>
 
     <TableView fx:id="booksTable" VBox.vgrow="ALWAYS">

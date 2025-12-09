@@ -31,4 +31,14 @@ public class MemberController {
     private void handleAddMember() {
         System.out.println("Message to see if the add button works ");
     }
+
+    @FXML
+    private void handleDeleteMember() {
+        System.out.println("Message to see if the delete button works ");
+    }
+
+    @FXML
+    private void handleEditMember() {
+        System.out.println("Message to see if the edit button works ");
+    }
 }
